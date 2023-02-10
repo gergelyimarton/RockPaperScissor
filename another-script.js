@@ -1,15 +1,4 @@
 let nameIsRight = false
-
-while (nameIsRight != true){
-  let yourName = prompt("Please enter your name:");
-  if (yourName !== "rock" && yourName !== "paper" && yourName !== "scissor" && yourName !== "Rock" && yourName !== "Paper" && yourName !== "Scissor" && yourName !== "Bot" && yourName !== "bot"){
-      document.getElementById("data-your-name").innerHTML = "<div>" + yourName + "</div>";
-      nameIsRight = true
-  } else {
-      alert("Please pick another name!")
-  }
-}
-
 const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
@@ -31,6 +20,16 @@ const SELECTIONS = [
     beats: 'paper'
   }
 ]
+
+while (nameIsRight != true){
+  let yourName = prompt("Please enter your name:");
+  if (yourName !== "rock" && yourName !== "paper" && yourName !== "scissor" && yourName !== "Rock" && yourName !== "Paper" && yourName !== "Scissor" && yourName !== "Bot" && yourName !== "bot"){
+      document.getElementById("data-your-name").innerHTML = "<div>" + yourName + "</div>";
+      nameIsRight = true
+  } else {
+      alert("Please pick another name!")
+  }
+}
 
 selectionButtons.forEach(selectionButton => {
   selectionButton.addEventListener('click', e => {
