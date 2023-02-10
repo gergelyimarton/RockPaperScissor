@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" ></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="another-script.js" defer></script>
 </head>
 <body>
-    
+  <div class="selections">
+    <button class="selection" data-selection="paper">✋</button>
+    <button class="selection" data-selection="scissor">✌</button>
+    <button class="selection" data-selection="rock">✊</button>
+  </div>
+  <div class="results">
+    <div class="name-score-container">
+      <div id="data-your-name">
+        <!-- You -->
+      </div>
+      <span class="result-score" data-your-score>0</span>
+    </div>
+    <div data-final-column>
+      Bot
+      <span class="result-score" data-computer-score>0</span>
+    </div>
 </body>
 </html>
