@@ -3,6 +3,9 @@ const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
 const yourScoreSpan = document.querySelector('[data-your-score]')
+const dynamically = document.getElementById('dynamic')
+
+
 const SELECTIONS = [
   {
     name: 'rock',
@@ -77,3 +80,4 @@ function randomSelection() {
   const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
   return SELECTIONS[randomIndex]
 }
+
