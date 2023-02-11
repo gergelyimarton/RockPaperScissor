@@ -8,4 +8,4 @@ Project designed to run from console only i.e without UI designed
 Project designed to be played in a browser with a UI 
 
 ## Live Demo is available here
-[Click to view]('')
+https://gergelyimarton.github.io/RockPaperScissor/
